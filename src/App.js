@@ -5,27 +5,27 @@ import './App.css';
 const finalSpaceCharacters = [
   {
     id: 'gary',
-    name: 'Gary Goodspeed',
+    name: 'Textbox',
     thumb: '/images/gary.png'
   },
   {
     id: 'cato',
-    name: 'Little Cato',
+    name: 'Heading',
     thumb: '/images/cato.png'
   },
   {
     id: 'kvn',
-    name: 'KVN',
+    name: 'Weavy Feeds',
     thumb: '/images/kvn.png'
   },
   {
     id: 'mooncake',
-    name: 'Mooncake',
+    name: 'Weavy File API',
     thumb: '/images/mooncake.png'
   },
   {
     id: 'quinn',
-    name: 'Quinn Ergon',
+    name: 'Wijmo Quick Chart',
     thumb: '/images/quinn.png'
   }
 ]
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Final Space Characters</h1>
+        <h1>Drag and Drop Sample</h1>
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="characters">
             {(provided) => (
@@ -73,9 +73,6 @@ function App() {
           </Droppable>
         </DragDropContext>
       </header>
-      <p>
-        Images from <a href="https://final-space.fandom.com/wiki/Final_Space_Wiki">Final Space Wiki</a>
-      </p>
     </div>
   );
 }
